@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -e
 
-REPO="https://github.com/you/nix-config.git"
+REPO="https://github.com/DuckThom/nix-config.git"
 TARGET="$HOME/.config/nix-config"
 
 echo "==> Installing Nix (if needed)"
