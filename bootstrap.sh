@@ -17,9 +17,11 @@ grep -q flakes ~/.config/nix/nix.conf 2>/dev/null || \
 echo "==> Cloning config"
 if [ ! -d "$TARGET" ]; then
   git clone "$REPO" "$TARGET"
+  cd "$TARGET"
+else
+  cd "$TARGET"
+  git pull
 fi
-
-cd "$TARGET"
 
 PLATFORM="$(uname -o)"
 
