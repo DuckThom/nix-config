@@ -8,7 +8,7 @@
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
 
     # future macOS support
-    # darwin.url = "github:LnL7/nix-darwin";
+    darwin.url = "github:LnL7/nix-darwin";
   };
 
   outputs = { self, nixpkgs, home-manager, darwin, ... }:

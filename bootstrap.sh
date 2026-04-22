@@ -21,9 +21,9 @@ fi
 
 cd "$TARGET"
 
-echo "==> Applying Home Manager config for $PLATFORM"
-
 PLATFORM="$(uname -o)"
+
+echo "==> Applying Home Manager config for $PLATFORM"
 case "$PLATFORM" in
     # "Darwin")
         # nix run home-manager/master -- switch --flake .#tessa@mac
