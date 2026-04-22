@@ -11,6 +11,6 @@
   };
 
   programs.git = {
-    userEmail = "t.wiringa@youweagency.com";
+    settings.user.email = "t.wiringa@youweagency.com";
   };
 }

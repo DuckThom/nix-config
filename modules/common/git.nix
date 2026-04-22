@@ -1,16 +1,13 @@
 {
   programs.git = {
     enable = true;
-    userName = "Tessa Wiringa";
-    userEmail = "git@tjwiringa.dev";
 
-    signing = {
-      signByDefault = true;
-      format = "ssh";
-      key = "~/.ssh/bw_git_signing.pub";
-    };
+    settings = {
+      user = {
+        name = "Tessa Wiringa";
+        email = "git@tjwiringa.dev";
+      };
 
-    extraConfig = {
       init.defaultBranch = "main";
       pull.rebase = false;
       push.default = "simple";
@@ -23,6 +20,12 @@
         touch = "commit --amend --date now";
         puoh = "push -u origin HEAD";
       };
+    };
+
+    signing = {
+      signByDefault = true;
+      format = "ssh";
+      key = "~/.ssh/bw_git_signing.pub";
     };
   };
 }
