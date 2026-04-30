@@ -1,3 +1,5 @@
+{ lib, ... }:
+
 {
   programs.git = {
     enable = true;
@@ -5,7 +7,7 @@
     settings = {
       user = {
         name = "Tessa Wiringa";
-        email = "git@tjwiringa.dev";
+        email = lib.mkDefault "git@tjwiringa.dev";
       };
 
       init.defaultBranch = "main";
