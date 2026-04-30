@@ -1,4 +1,8 @@
 {
+  import = [
+    ./configs/zed-editor.nix
+  ];
+
   home.username = "tessa";
 
   home.shell = {
