@@ -1,4 +1,15 @@
 {
+  xdg.desktopEntries.kitty = {
+    name = "kitty";
+    genericName = "Terminal emulator";
+    comment = "Fast, feature-rich, GPU based terminal";
+
+    exec = "kitty";
+    icon = "kitty";
+    terminal = false;
+    categories = [ "System" "TerminalEmulator" ];
+  };
+
   programs.kitty = {
     enable = true;
 
