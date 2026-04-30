@@ -1,5 +1,6 @@
 {
   imports = [
+    ./configs/kitty.nix
     ./configs/zed-editor.nix
   ];
 

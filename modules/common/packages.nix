@@ -2,10 +2,11 @@
 
 {
   home.packages = with pkgs; [
-    git
+    # cli tools
     curl
-    wget
+    git
     neovim
+    wget
 
     # fonts
     nerd-fonts._0xproto
@@ -14,10 +15,11 @@
     docker-client
     ddev
 
-    # tools
-    zed-editor
+    # gui tools
     bruno
     jetbrains-toolbox
+    kitty
     microsoft-edge
+    zed-editor
   ];
 }

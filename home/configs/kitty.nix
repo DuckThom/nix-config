@@ -1,0 +1,60 @@
+{
+  programs.kitty = {
+    enable = true;
+
+    shellIntegration.enableZshIntegration = true;
+
+    settings = {
+      foreground = "#dcdfe4";
+      background = "#282c34";
+      background_opacity = 0.85;
+
+      selection_foreground = "#000000";
+      selection_background = "#FFFACD";
+      url_color = "#0087BD";
+
+      # black
+      color0 = "#282c34";
+      color8 = "#5d677a";
+
+      # red
+      color1 = "#e06c75";
+      color9 = "#e06c75";
+
+      # green
+      color2 = "#98c379";
+      color10 = "#98c379";
+
+      # yellow
+      color3 = "#e5c07b";
+      color11 = "#e5c07b";
+
+      # blue
+      color4 = "#61afef";
+      color12 = "#61afef";
+
+      # magenta
+      color5 = "#c678dd";
+      color13 = "#c678dd";
+
+      # cyan
+      color6 = "#56b6c2";
+      color14 = "#56b6c2";
+
+      # white
+      color7 = "#dcdfe4";
+      color15 = "#dcdfe4";
+
+      term = "xterm-256color";
+
+      remember_window_size = false;
+      initial_window_width = 1280;
+      initial_window_height = 800;
+
+      enabled_layouts = "grid";
+
+      tab_bar_edge = "bottom";
+      tab_bar_style = "powerline";
+    }
+  };
+}
