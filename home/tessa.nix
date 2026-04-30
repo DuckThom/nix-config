@@ -1,5 +1,5 @@
 {
-  import = [
+  imports = [
     ./configs/zed-editor.nix
   ];
 
