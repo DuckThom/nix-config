@@ -18,5 +18,6 @@
     zed-editor
     bruno
     jetbrains-toolbox
+    microsoft-edge
   ];
 }
