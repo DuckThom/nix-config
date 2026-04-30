@@ -5,6 +5,7 @@
     git
     curl
     wget
+    neovim
 
     # dev
     docker-client

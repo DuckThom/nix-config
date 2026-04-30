@@ -7,7 +7,7 @@
     home-manager.url = "github:nix-community/home-manager";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
 
-    # future macOS support
+    # macOS support
     darwin.url = "github:LnL7/nix-darwin";
   };
 
@@ -24,14 +24,13 @@
   in {
 
     # 🔹 Home Manager (primary dev env)
-    homeConfigurations."tessa@linux" =
+    homeConfigurations."tessa@quackpad" =
       home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
 
         modules = [
           ./home/tessa.nix
-          ./modules/common
-          ./modules/linux
+          ./hosts/quackpad.nix
         ];
       };
 

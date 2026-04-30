@@ -1,6 +1,9 @@
 {
   home.username = "tessa";
-  home.homeDirectory = "/home/tessa";
+
+  home.shell = {
+    enableZshIntegration = true;
+  };
 
   home.stateVersion = "25.11";
 

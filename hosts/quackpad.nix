@@ -1,6 +1,10 @@
 { pkgs, ... }:
 
 {
+  imports = [
+    ../modules/linux
+  ];
+
   # GUI-heavy stuff
   # home.packages = with pkgs; [
   #   ...
