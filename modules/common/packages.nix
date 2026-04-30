@@ -18,7 +18,6 @@
     # gui tools
     bruno
     jetbrains-toolbox
-    kitty
     microsoft-edge
     zed-editor
   ];

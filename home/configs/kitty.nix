@@ -55,6 +55,6 @@
 
       tab_bar_edge = "bottom";
       tab_bar_style = "powerline";
-    }
+    };
   };
 }
