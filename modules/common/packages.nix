@@ -7,6 +7,9 @@
     wget
     neovim
 
+    # fonts
+    nerd-fonts._0xproto
+
     # dev
     docker-client
     ddev
