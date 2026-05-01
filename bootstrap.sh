@@ -24,6 +24,7 @@ else
 fi
 
 PLATFORM="$(uname -o)"
+HOST=$(hostname)
 
 echo "==> Applying Home Manager config for $PLATFORM"
 case "$PLATFORM" in
@@ -31,7 +32,7 @@ case "$PLATFORM" in
         # nix run home-manager/master -- switch --flake .#tessa@mac
         # ;;
     "GNU/Linux")
-        nix run home-manager/master -- switch --flake .#tessa@linux
+        nix run home-manager/master -- switch --flake .#${USER}@${HOST}
         ;;
     *)
         echo "ERROR: Unknown platform $PLATFORM"

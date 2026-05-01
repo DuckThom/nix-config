@@ -1,15 +1,10 @@
 {
   imports = [
     ../modules/linux
-    ../modules/programs/kitty.nix
     ../modules/programs/zed-editor.nix
   ];
 
   home.sessionVariables = {
     DEVICE_TYPE = "laptop";
-  };
-
-  programs.git = {
-    settings.user.email = "t.wiringa@youweagency.com";
   };
 }

@@ -23,7 +23,6 @@
     };
   in {
 
-    # 🔹 Home Manager (primary dev env)
     homeConfigurations."tessa@quackpad" =
       home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
@@ -33,6 +32,17 @@
           ./hosts/quackpad.nix
         ];
       };
+
+    homeConfigurations."aloy@game-laptop" =
+      home-manager.lib.homeManagerConfiguration {
+        inherit pkgs;
+
+        modules = [
+          ./home/aloy.nix
+          ./hosts/game-laptop.nix
+        ];
+      };
+
 
     # 🔹 placeholder for macOS
     # homeConfigurations."tessa@mac" = ...

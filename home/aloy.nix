@@ -1,5 +1,5 @@
 {
-  home.username = "tessa";
+  home.username = "aloy";
 
   home.shell = {
     enableZshIntegration = true;
