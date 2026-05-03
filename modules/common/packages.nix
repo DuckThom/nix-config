@@ -14,6 +14,7 @@
     # dev
     docker-client
     ddev
+    nodejs
 
     # gui tools
     bruno
